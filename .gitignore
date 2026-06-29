@@ -1,0 +1,19 @@
+# Local HTTrack mirror kept only as source/reference material.
+cdn-cookieyes.com/
+hts-cache/
+media.pnl.ro/
+pnl.agency/
+pnl.ro/
+backblue.gif
+fade.gif
+hts-log.txt
+_legacy_httrack_index.html
+
+# Local system/editor files.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# PSD/source design files are intentionally not part of the static site.
+*.psd

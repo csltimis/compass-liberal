@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compass Liberal | CSL Timiș</title>
+    <meta name="description" content="Platformă de orientare civică pentru studenți, creată de CSL Timiș: test politic, compas ideologic, compatibilitate doctrinară PNL și metodologie transparentă.">
+    <meta name="theme-color" content="#163579">
+    <link rel="icon" href="assets/brand/csl-timis-albastru.png">
+    <link rel="preload" href="assets/fonts/mont-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/mont-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#test">Sari la test</a>
+
+    <header class="site-header" data-site-header>
+      <a class="brand-mark" href="#start" aria-label="Compass Liberal CSL Timiș">
+        <img src="assets/brand/csl-timis-albastru.png" alt="CSL Timiș">
+        <span>
+          <strong>Compass Liberal</strong>
+          <small>Powered by CSL Timiș</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navigație principală">
+        <a href="#test">Test</a>
+        <a href="#metodologie">Metodologie</a>
+        <a href="#csl">CSL Timiș</a>
+        <a href="#gdpr">GDPR</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="start" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Platformă de orientare civică pentru studenți</p>
+          <h1 id="hero-title">Află unde ești pe compasul politic.</h1>
+          <p class="hero-lead">
+            Răspunzi la 40 de afirmații, primești poziția ta politică, vezi compatibilitatea cu liberalismul democratic și înțelegi formula de calcul.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#test">Începe testul</a>
+            <a class="button button-secondary" href="#metodologie">Vezi metodologia</a>
+          </div>
+
+          <dl class="hero-metrics" aria-label="Rezumat platformă">
+            <div>
+              <dt>40</dt>
+              <dd>afirmații scurte</dd>
+            </div>
+            <div>
+              <dt>6</dt>
+              <dd>axe ideologice</dd>
+            </div>
+            <div>
+              <dt>100%</dt>
+              <dd>formulă explicată</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-panel" aria-label="Rezumat rezultat">
+          <div class="mini-compass" aria-hidden="true">
+            <span class="axis axis-x"></span>
+            <span class="axis axis-y"></span>
+            <span class="party party-psd"><img src="assets/parties/psd.png" alt=""><b>PSD</b></span>
+            <span class="party party-aur"><img src="assets/parties/aur.png" alt=""><b>AUR</b></span>
+            <span class="party party-pnl"><img src="assets/parties/pnl.png" alt=""><b>PNL</b></span>
+            <span class="party party-usr"><img src="assets/parties/usr.png" alt=""><b>USR</b></span>
+            <span class="party party-udmr"><img src="assets/parties/udmr.png" alt=""><b>UDMR</b></span>
+            <span class="party party-sos"><img src="assets/parties/sos.png" alt=""><b>SOS</b></span>
+            <span class="party party-pot"><img src="assets/parties/pot.png" alt=""><b>POT</b></span>
+            <span class="marker">Tu</span>
+          </div>
+          <div class="panel-caption">
+            <strong>Rezultatul este orientativ, nu etichetă politică.</strong>
+            <span>Compatibilitatea PNL este calculată doctrinar, separat de poziția pe compas.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section test-section" id="test" aria-labelledby="test-title">
+        <div class="section-heading">
+          <p class="eyebrow">Testul</p>
+          <h2 id="test-title">Busola valorilor tale politice</h2>
+          <p>
+            Platforma compară răspunsurile tale cu un profil doctrinar liberal: piață liberă, stat de drept, administrație eficientă, orientare euro-atlantică și responsabilitate civică.
+          </p>
+        </div>
+
+        <div class="quiz-shell" data-quiz-shell>
+          <div class="quiz-progress" aria-label="Progres test">
+            <span data-progress-label>Pregătire</span>
+            <div class="progress-track">
+              <span data-progress-bar style="width: 0%"></span>
+            </div>
+          </div>
+
+          <div class="quiz-screen is-active" data-screen="intro">
+            <div class="quiz-intro-grid">
+              <div>
+                <p class="step-label">Compass Liberal</p>
+                <h3>Un test scurt, transparent și explicabil.</h3>
+                <p>
+                  Înainte de întrebări vei completa datele necesare pentru raport și consimțămintele separate pentru prelucrare, contactare și profilul politic inferat.
+                </p>
+              </div>
+              <ul class="check-list">
+                <li>Scor pe economie, fiscalitate, stat, societate, geopolitică și instituții.</li>
+                <li>Compas vizual cu repere doctrinare ale partidelor parlamentare.</li>
+                <li>Raport imprimabil ca PDF direct din browser.</li>
+              </ul>
+            </div>
+            <button class="button button-primary" type="button" data-action="start-profile">Completează datele</button>
+          </div>
+
+          <form class="quiz-screen profile-form" data-screen="profile" data-profile-form novalidate>
+            <div class="form-header">
+              <p class="step-label">Pasul 1</p>
+              <h3>Date pentru raport și contact</h3>
+              <p>Datele sunt trimise către Google Sheets doar după finalizarea testului și doar dacă acordurile obligatorii sunt bifate.</p>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                <span>Nume</span>
+                <input name="lastName" autocomplete="family-name" required>
+              </label>
+              <label>
+                <span>Prenume</span>
+                <input name="firstName" autocomplete="given-name" required>
+              </label>
+              <label>
+                <span>Telefon</span>
+                <input name="phone" autocomplete="tel" inputmode="tel" required>
+              </label>
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" autocomplete="email" required>
+              </label>
+              <label>
+                <span>Data nașterii</span>
+                <input name="birthDate" type="date" required>
+              </label>
+              <label>
+                <span>Universitate</span>
+                <input name="university" autocomplete="organization" required>
+              </label>
+              <label>
+                <span>Facultate</span>
+                <input name="faculty" required>
+              </label>
+              <label>
+                <span>An de studiu</span>
+                <select name="studyYear" required>
+                  <option value="">Alege</option>
+                  <option>Anul I</option>
+                  <option>Anul II</option>
+                  <option>Anul III</option>
+                  <option>Anul IV</option>
+                  <option>Master I</option>
+                  <option>Master II</option>
+                  <option>Doctorat</option>
+                  <option>Altă situație</option>
+                </select>
+              </label>
+              <label>
+                <span>Specializare</span>
+                <input name="specialization" required>
+              </label>
+              <label>
+                <span>De unde ai auzit de platformă?</span>
+                <select name="source" required>
+                  <option value="">Alege</option>
+                  <option>Instagram CSL Timiș</option>
+                  <option>Facebook CSL Timiș</option>
+                  <option>Eveniment / conferință</option>
+                  <option>Recomandare de la un prieten</option>
+                  <option>Campus / organizație studențească</option>
+                  <option>Altă sursă</option>
+                </select>
+              </label>
+              <label class="hp-field" aria-hidden="true">
+                <span>Website</span>
+                <input name="website" tabindex="-1" autocomplete="off">
+              </label>
+            </div>
+
+            <div class="consent-box" aria-labelledby="consent-title">
+              <h4 id="consent-title">Acorduri GDPR</h4>
+              <label class="consent-line">
+                <input type="checkbox" name="consentResult" required>
+                <span>Sunt de acord cu prelucrarea datelor personale pentru generarea rezultatului și transmiterea răspunsului în Google Sheets.</span>
+              </label>
+              <label class="consent-line">
+                <input type="checkbox" name="consentPolitical" required>
+                <span>Îmi exprim consimțământul explicit pentru prelucrarea răspunsurilor politice și a profilului ideologic inferat, exclusiv pentru calcularea rezultatului.</span>
+              </label>
+              <label class="consent-line">
+                <input type="checkbox" name="consentAge" required>
+                <span>Confirm că am cel puțin 16 ani și am citit informarea privind datele personale.</span>
+              </label>
+              <label class="consent-line">
+                <input type="checkbox" name="consentContact">
+                <span>Sunt de acord să fiu contactat de CSL Timiș pentru activități, evenimente și oportunități de implicare civică.</span>
+              </label>
+              <p class="fine-print">
+                Poți cere accesul, rectificarea sau ștergerea datelor. Politica PNL privind datele personale este disponibilă
+                <a href="assets/downloads/politica-date-pnl.pdf" target="_blank" rel="noopener">aici</a>, iar platforma explică prelucrarea în secțiunea GDPR.
+              </p>
+            </div>
+
+            <p class="form-error" data-form-error role="alert"></p>
+
+            <div class="form-actions">
+              <button class="button button-secondary" type="button" data-action="back-intro">Înapoi</button>
+              <button class="button button-primary" type="submit">Intră în test</button>
+            </div>
+          </form>
+
+          <div class="quiz-screen question-screen" data-screen="question">
+            <div class="question-meta">
+              <span data-question-number>Întrebarea 1 / 40</span>
+              <span data-question-axis>Economie</span>
+            </div>
+            <h3 data-question-text></h3>
+            <div class="answer-grid" data-answer-grid></div>
+            <div class="quiz-navigation">
+              <button class="button button-secondary" type="button" data-action="prev-question">Înapoi</button>
+              <button class="button button-primary" type="button" data-action="next-question">Continuă</button>
+            </div>
+          </div>
+
+          <div class="quiz-screen result-screen" data-screen="result">
+            <div class="result-topline">
+              <p class="step-label">Rezultat personalizat</p>
+              <p data-sync-status class="sync-status">Pregătim raportul.</p>
+            </div>
+
+            <div class="result-hero">
+              <div>
+                <span class="score-kicker">Compatibilitate doctrinară PNL</span>
+                <strong data-pnl-score>0%</strong>
+                <p data-profile-name>Profil în calcul</p>
+              </div>
+              <p data-profile-description></p>
+            </div>
+
+            <div class="result-grid">
+              <div class="result-card compass-card">
+                <h4>Poziția pe compas</h4>
+                <div class="compass" data-compass>
+                  <span class="compass-axis compass-axis-x"></span>
+                  <span class="compass-axis compass-axis-y"></span>
+                  <span class="compass-label top">instituțional / tradiție democratică</span>
+                  <span class="compass-label bottom">libertarian / progresist</span>
+                  <span class="compass-label left">stat / intervenție</span>
+                  <span class="compass-label right">piață / inițiativă</span>
+                  <div class="party-layer" data-party-layer></div>
+                  <span class="user-dot" data-user-dot>Tu</span>
+                </div>
+              </div>
+
+              <div class="result-card">
+                <h4>Axele tale</h4>
+                <div class="axis-list" data-axis-list></div>
+              </div>
+            </div>
+
+            <div class="result-card">
+              <h4>Cele mai puternice valori</h4>
+              <div class="value-tags" data-value-tags></div>
+            </div>
+
+            <div class="result-actions">
+              <button class="button button-primary" type="button" data-action="print-report">Descarcă raport PDF</button>
+              <button class="button button-secondary" type="button" data-action="restart">Reia testul</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section methodology" id="metodologie" aria-labelledby="method-title">
+        <div class="section-heading">
+          <p class="eyebrow">Metodologie</p>
+          <h2 id="method-title">Cum se calculează rezultatul</h2>
+          <p>
+            Platforma este inspirată de instrumentele de tip Voting Advice Application: răspunzi la afirmații, răspunsurile sunt transformate în scoruri, iar scorurile sunt comparate cu repere doctrinare declarate.
+          </p>
+        </div>
+
+        <div class="method-grid">
+          <article>
+            <h3>1. Scala de răspuns</h3>
+            <p>Fiecare afirmație are o valoare numerică:</p>
+            <ul class="scale-list">
+              <li><strong>-2</strong> Total dezacord</li>
+              <li><strong>-1</strong> Mai degrabă nu</li>
+              <li><strong>0</strong> Neutru / nu știu</li>
+              <li><strong>+1</strong> Mai degrabă da</li>
+              <li><strong>+2</strong> Total de acord</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>2. Cele șase axe</h3>
+            <p>
+              Fiecare întrebare influențează una sau două axe. Scorul unei axe este media ponderată a contribuțiilor, normalizată între -100 și +100.
+            </p>
+            <div class="axis-definitions">
+              <span>Economie: stat vs piață</span>
+              <span>Fiscal: taxe mari vs taxe mici</span>
+              <span>Stat: aparat mare vs stat suplu</span>
+              <span>Social: progresist vs conservator moderat</span>
+              <span>Geopolitic: izolare vs UE/NATO</span>
+              <span>Instituțional: populism vs stat de drept</span>
+            </div>
+          </article>
+
+          <article>
+            <h3>3. Formula PNL</h3>
+            <p>Compatibilitatea doctrinară PNL este calculată separat de compas:</p>
+            <table class="formula-table">
+              <tbody>
+                <tr><th>25%</th><td>Economie de piață</td></tr>
+                <tr><th>20%</th><td>Fiscalitate redusă și predictibilă</td></tr>
+                <tr><th>15%</th><td>Stat suplu și administrație eficientă</td></tr>
+                <tr><th>15%</th><td>Orientare UE / NATO / modernizare occidentală</td></tr>
+                <tr><th>10%</th><td>Proprietate privată și antreprenoriat</td></tr>
+                <tr><th>10%</th><td>Stat de drept, merit și anticorupție</td></tr>
+                <tr><th>5%</th><td>Tradiție democratică și identitate națională moderată</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article>
+            <h3>4. Interpretare</h3>
+            <p>
+              Scorul nu spune cu cine trebuie să votezi și nu reprezintă o recomandare electorală. El arată proximități valorice, cu marjă de interpretare, în funcție de răspunsurile date.
+            </p>
+            <ul class="threshold-list">
+              <li><strong>85-100%</strong> compatibilitate liberală foarte ridicată</li>
+              <li><strong>70-84%</strong> compatibilitate liberală ridicată</li>
+              <li><strong>55-69%</strong> compatibilitate parțială</li>
+              <li><strong>40-54%</strong> compatibilitate mixtă</li>
+              <li><strong>sub 40%</strong> orientare diferită de liberalismul PNL</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="party-method">
+          <div class="party-method-intro">
+            <p class="eyebrow">Repere parlamentare</p>
+            <h3>Partidele poziționate pe compas</h3>
+            <p>
+              Compasul folosește partidele parlamentare ca repere de citire, nu ca recomandare de vot. Pozițiile sunt construite din clasificările publice privind spectrul politic și ideologiile asumate în spațiul public.
+            </p>
+          </div>
+          <div class="party-reference-grid" aria-label="Repere doctrinare ale partidelor parlamentare">
+            <article>
+              <img src="assets/parties/psd.png" alt="PSD">
+              <div>
+                <strong>PSD</strong>
+                <span>Centru-stânga</span>
+                <p>Conservatorism social, naționalism de stânga, populism de stânga.</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/parties/aur.png" alt="AUR">
+              <div>
+                <strong>AUR</strong>
+                <span>Dreapta spre extrema dreaptă</span>
+                <p>Naționalism românesc, unionism, euroscepticism, populism de dreapta.</p>
+              </div>
+            </article>
+            <article class="is-featured">
+              <img src="assets/parties/pnl.png" alt="PNL">
+              <div>
+                <strong>PNL</strong>
+                <span>Centru-dreapta</span>
+                <p>Liberalism conservator, conservatorism social, creștin-democrație.</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/parties/usr.png" alt="USR">
+              <div>
+                <strong>USR</strong>
+                <span>Centru spre centru-dreapta</span>
+                <p>Europenism, liberalism, liberalism economic.</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/parties/udmr.png" alt="UDMR">
+              <div>
+                <strong>UDMR</strong>
+                <span>Centru-dreapta</span>
+                <p>Regionalism, liberalism conservator, europenism.</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/parties/sos.png" alt="SOS România">
+              <div>
+                <strong>SOS RO</strong>
+                <span>Extrema dreaptă</span>
+                <p>Naționalism românesc, populism de dreapta, conservatorism social.</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/parties/pot.png" alt="POT">
+              <div>
+                <strong>POT</strong>
+                <span>Extrema dreaptă</span>
+                <p>Naționalism românesc, suveranism, conservatorism național, dreapta creștină.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="source-strip">
+          <a href="https://ro.wikipedia.org/wiki/List%C4%83_de_partide_politice_din_Rom%C3%A2nia" target="_blank" rel="noopener">Listă de partide politice din România</a>
+          <a href="https://pnl.ro/wp-content/uploads/2021/11/Politica-privind-prelucrarea-si-protectia-datelor-cu-caracter-personal.pdf" target="_blank" rel="noopener">Politica PNL privind datele</a>
+          <a href="https://gdpr-info.eu/art-9-gdpr/" target="_blank" rel="noopener">GDPR Art. 9</a>
+          <a href="https://en.wikipedia.org/wiki/Voting_advice_application" target="_blank" rel="noopener">Voting Advice Application</a>
+        </div>
+      </section>
+
+      <section class="section about-csl" id="csl" aria-labelledby="csl-title">
+        <div class="section-heading">
+          <p class="eyebrow">CSL Timiș</p>
+          <h2 id="csl-title">Ce înseamnă liberalismul, PNL și CSL Timiș</h2>
+        </div>
+
+        <div class="essay-layout">
+          <article class="essay-main">
+            <h3>Liberalismul înseamnă încredere în oameni</h3>
+            <p>Liberalismul pornește de la o idee simplă: o societate prosperă se construiește atunci când oamenii au libertatea de a învăța, de a munci, de a crea și de a-și valorifica potențialul.</p>
+            <p>Libertatea individuală, inițiativa, responsabilitatea și meritul reprezintă fundamentele acestei viziuni. O economie sănătoasă, instituții solide și o societate deschisă apar atunci când oamenii pot lua decizii, își pot asuma responsabilitatea pentru ele și beneficiază de reguli clare, aplicate în mod egal.</p>
+            <p>Liberalismul privește statul ca pe un partener al cetățeanului, nu ca pe un înlocuitor al inițiativei individuale. Rolul său este să garanteze statul de drept, să ofere servicii publice eficiente, să creeze un cadru predictibil și să protejeze concurența loială.</p>
+            <p>Prosperitatea nu este rezultatul unei decizii administrative, ci al milioanelor de oameni care muncesc, investesc, inovează și construiesc. Antreprenorii, profesioniștii, cercetătorii, profesorii, studenții și toți cei care creează valoare contribuie, zi de zi, la dezvoltarea societății.</p>
+            <p>De aceea, liberalismul susține o economie de piață competitivă, în care succesul este construit prin muncă, competență și inițiativă, iar regulile sunt aceleași pentru toți.</p>
+
+            <h3>O tradiție care a construit România modernă</h3>
+            <p>Partidul Național Liberal a fost fondat la 24 mai 1875, într-o perioadă în care România își definea instituțiile și direcția de dezvoltare. De-a lungul istoriei sale, PNL a fost asociat cu unele dintre cele mai importante momente din procesul de modernizare al statului român.</p>
+            <p>Lideri precum Ion C. Brătianu, Ion I. C. Brătianu, Vintilă Brătianu, I. G. Duca sau Dimitrie A. Sturdza au contribuit la consolidarea instituțiilor statului, la afirmarea independenței României, la dezvoltarea administrației moderne, la promovarea educației și la construcția cadrului constituțional al României interbelice.</p>
+            <p>Independența din 1877, dezvoltarea infrastructurii, modernizarea administrației, extinderea economiei naționale, participarea la realizarea României Mari și adoptarea Constituției din 1923 sunt repere istorice care au marcat evoluția țării și în care liderii liberali au avut un rol important.</p>
+            <p>Deviza istorică „Prin noi înșine” exprimă una dintre ideile definitorii ale liberalismului românesc: încrederea în capacitatea oamenilor, în educație, în muncă, în inițiativă și în dezvoltarea unei economii competitive, capabile să creeze prosperitate pe termen lung.</p>
+
+            <h3>Liberalismul în prezent</h3>
+            <p>Astăzi, Partidul Național Liberal își asumă valorile liberalismului democratic și este parte a familiei politice europene de centru-dreapta.</p>
+            <ul>
+              <li>libertatea individuală și respectarea drepturilor fundamentale;</li>
+              <li>economia de piață și concurența loială;</li>
+              <li>inițiativa privată și antreprenoriatul;</li>
+              <li>educația ca principal motor al dezvoltării;</li>
+              <li>meritocrația și egalitatea de șanse;</li>
+              <li>instituții publice eficiente și transparente;</li>
+              <li>responsabilitatea fiscală și utilizarea eficientă a resurselor publice;</li>
+              <li>apartenența României la Uniunea Europeană și la comunitatea euro-atlantică.</li>
+            </ul>
+            <p>Liberalismul înseamnă echilibru între libertate și responsabilitate. Înseamnă un stat care stabilește reguli clare, protejează interesul public și creează condițiile necesare pentru ca oamenii și comunitățile să se dezvolte.</p>
+
+            <h3>Ce reprezintă CSL Timiș?</h3>
+            <p>Clubul Studenților Liberali Timiș este comunitatea studenților care aleg să transforme aceste valori în acțiune.</p>
+            <p>CSL Timiș este locul în care tinerii pot învăța, pot dezbate, pot organiza proiecte și pot înțelege mai bine modul în care funcționează instituțiile democratice și administrația publică.</p>
+            <p>Prin conferințe, dezbateri, traininguri, campanii și proiecte dedicate comunității, membrii CSL Timiș își dezvoltă competențe de comunicare, leadership, organizare și lucru în echipă, construind în același timp o rețea de oameni care împărtășesc aceleași valori.</p>
+            <p>CSL Timiș promovează implicarea civică, dialogul, responsabilitatea și dorința de a contribui la dezvoltarea comunității.</p>
+            <p>Pentru noi, politica înseamnă, înainte de toate, oameni, idei și proiecte. Înseamnă libertatea de a construi, curajul de a propune și responsabilitatea de a transforma ideile în rezultate.</p>
+            <p class="closing-line">Învață. Construiește. Contează.</p>
+          </article>
+
+          <aside class="essay-aside">
+            <img src="assets/brand/csl-timis-albastru.png" alt="CSL Timiș albastru">
+            <div>
+              <strong>Str. Gheorghe Lazăr, Nr. 1</strong>
+              <span>Piața Unirii, Timișoara, România, 300078</span>
+            </div>
+            <div class="social-links">
+              <a class="social-link" href="https://www.instagram.com/csltimis_/" target="_blank" rel="noopener" aria-label="Instagram CSL Timiș">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1.2"></circle></svg>
+                <span>@csltimis_</span>
+              </a>
+              <a class="social-link" href="https://www.facebook.com/csltimis" target="_blank" rel="noopener" aria-label="Facebook CSL Timiș">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.6.4-1 1-1Z"></path></svg>
+                <span>CSL Timiș</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+
+        <div class="leaders-block" aria-labelledby="leaders-title">
+          <div class="leaders-heading">
+            <p class="eyebrow">Lideri istorici</p>
+            <h3 id="leaders-title">O axă a tradiției liberale</h3>
+          </div>
+          <div class="leaders-timeline">
+            <article>
+              <img src="assets/portraits/ion-c-bratianu.png" alt="Ion C. Brătianu">
+              <strong>Ion C. Brătianu</strong>
+              <span>1875-1891</span>
+            </article>
+            <article>
+              <img src="assets/portraits/dumitru-bratianu.png" alt="Dumitru Brătianu">
+              <strong>Dumitru Brătianu</strong>
+              <span>1891-1892</span>
+            </article>
+            <article>
+              <img src="assets/portraits/dimitrie-sturdza.png" alt="Dimitrie A. Sturdza">
+              <strong>Dimitrie A. Sturdza</strong>
+              <span>1892-1909</span>
+            </article>
+            <article>
+              <img src="assets/portraits/ion-ic-bratianu.png" alt="Ion I. C. Brătianu">
+              <strong>Ion I. C. Brătianu</strong>
+              <span>1909-1927</span>
+            </article>
+            <article>
+              <img src="assets/portraits/vintila-bratianu.png" alt="Vintilă Brătianu">
+              <strong>Vintilă Brătianu</strong>
+              <span>1927-1930</span>
+            </article>
+            <article>
+              <img src="assets/portraits/ig-duca.png" alt="Ion Gheorghe Duca">
+              <strong>I. G. Duca</strong>
+              <span>1930-1933</span>
+            </article>
+            <article>
+              <img src="assets/portraits/constantin-ic-bratianu.png" alt="Constantin I. C. Brătianu">
+              <strong>Constantin I. C. Brătianu</strong>
+              <span>1934-1947</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gdpr-section" id="gdpr" aria-labelledby="gdpr-title">
+        <div class="section-heading">
+          <p class="eyebrow">GDPR</p>
+          <h2 id="gdpr-title">Informare privind datele personale</h2>
+          <p>
+            Platforma colectează date de contact, date educaționale și răspunsuri politice. Răspunsurile pot indica opinii politice, deci sunt tratate ca date sensibile și cer consimțământ explicit.
+          </p>
+        </div>
+
+        <div class="privacy-grid">
+          <article>
+            <h3>Ce se colectează</h3>
+            <p>Nume, prenume, telefon, email, data nașterii, universitate, facultate, an de studiu, specializare, sursa prin care ai auzit de platformă, răspunsurile la test, scorurile calculate și acordurile bifate.</p>
+          </article>
+          <article>
+            <h3>De ce se colectează</h3>
+            <p>Pentru generarea raportului, validarea consimțămintelor, analiza agregată a interesului civic și, doar dacă bifezi separat, pentru contactare de către CSL Timiș.</p>
+          </article>
+          <article>
+            <h3>Unde se stochează</h3>
+            <p>Datele sunt transmise către un Google Sheet privat, administrat de CSL Timiș pentru această platformă. Accesul este restricționat la echipa autorizată care gestionează rezultatele, contactarea participanților și solicitările privind datele personale.</p>
+          </article>
+          <article>
+            <h3>Drepturile tale</h3>
+            <p>Poți solicita acces la date, rectificarea lor, ștergerea datelor, restricționarea prelucrării sau retragerea consimțământului. Cererile se transmit către echipa CSL Timiș prin datele de contact afișate pe această pagină.</p>
+          </article>
+        </div>
+
+        <div class="legal-note">
+          <strong>Angajamentul CSL Timiș privind datele</strong>
+          <p>
+            Datele colectate prin Compass Liberal sunt folosite pentru generarea rezultatului, pentru administrarea platformei și, doar în baza acordului separat, pentru contactare. Răspunsurile politice nu sunt publicate, nu sunt vândute și nu sunt folosite pentru targetare fără consimțământul explicit al participantului.
+          </p>
+          <div class="privacy-actions">
+            <a class="button button-secondary" href="assets/downloads/politica-date-pnl.pdf" target="_blank" rel="noopener">Politica privind datele</a>
+            <a class="button button-primary" href="#contact">Contact CSL Timiș</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-brand">
+        <img src="assets/brand/csl-timis-alb.png" alt="CSL Timiș">
+        <p>Platformă creată pentru CSL Timiș. Orientare civică, metodologie transparentă, date tratate responsabil.</p>
+      </div>
+      <address>
+        <strong>CSL Timiș</strong>
+        Str. Gheorghe Lazăr, Nr. 1, Piața Unirii<br>
+        Timișoara, România, 300078
+      </address>
+      <div class="footer-social">
+        <strong>Urmărește CSL Timiș</strong>
+        <nav class="social-links" aria-label="Social media CSL Timiș">
+          <a class="social-link" href="https://www.facebook.com/csltimis" target="_blank" rel="noopener" aria-label="Facebook CSL Timiș">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.6.4-1 1-1Z"></path></svg>
+            <span>Facebook</span>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/csltimis_/" target="_blank" rel="noopener" aria-label="Instagram CSL Timiș">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1.2"></circle></svg>
+            <span>Instagram</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="contact-grid" aria-label="Echipa platformei">
+        <article class="contact-card">
+          <span class="contact-role">Președinte CSL Timiș</span>
+          <strong>Jawwash Raji</strong>
+          <a class="contact-phone" href="tel:+40755055296">+40 755 055 296</a>
+          <div class="social-links">
+            <a class="social-link" href="https://www.facebook.com/jawwash.raji07" target="_blank" rel="noopener" aria-label="Facebook Jawwash Raji">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.6.4-1 1-1Z"></path></svg>
+              <span>Facebook</span>
+            </a>
+            <a class="social-link" href="https://www.instagram.com/jawwash_raji/" target="_blank" rel="noopener" aria-label="Instagram Jawwash Raji">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1.2"></circle></svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="contact-card">
+          <span class="contact-role">Platformă creată de</span>
+          <strong>Tufiș Andrei-Mihai</strong>
+          <p>Vicepreședinte CSL Timiș</p>
+          <a class="contact-phone" href="tel:+40758895184">+40 758 895 184</a>
+          <div class="social-links">
+            <a class="social-link" href="https://www.linkedin.com/in/tandrei/" target="_blank" rel="noopener" aria-label="LinkedIn Tufiș Andrei-Mihai">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h4v11H5V9Zm2-5a2.2 2.2 0 1 1 0 4.4A2.2 2.2 0 0 1 7 4Zm5 5h4v1.6c.6-1 1.7-1.9 3.5-1.9 3 0 4.5 2 4.5 5.4V20h-4v-5.2c0-1.5-.5-2.5-1.8-2.5-1.2 0-1.8.8-2.1 1.6-.1.3-.1.7-.1 1.1V20h-4V9Z"></path></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </footer>
+
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>
